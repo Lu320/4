@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="bootstrap-3.3/bootstrap-3.3.7-dist/js/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <title>意见反馈</title>
+        <style type="text/css" media="screen">
+                *{
+        padding:0;
+        margin:0;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            background-color: #74b1fd;
+            overflow:hidden;
+                    }
+            nav{
+           width: 100%;
+           height: 100px;
+           position: fixed;
+           top:0;
+           left:0;
+        }
+        .logo{
+            float:left;
+            margin-top:10px;
+            margin-left:50px;
+        }
+        .navbar ul{
+            text-align: center;
+            height: 30px;
+            width: 1000px;
+            text-decoration:none;
+        }
+        .navbar ul li{
+         float: left;
+         margin-top: 30px;
+         margin-left:20px;
+         list-style-type:none;
+         font-size:20px;
+        }
+        .navbar ul li a{
+        text-decoration:none;
+        color:#fff;
+        }
+        .navbar .search input{
+         outline: none;
+         float:left;
+         }
+        .navbar .search input[type="text"]{
+         width:220px;
+         height:30px;
+         border:1px solid #ccc;
+         border-right: none;
+         padding-left: 10px;
+         margin-left: 45px;
+         margin-top:5px;
+               }
+        .navbar .search input[type="submit"]{
+         width:70px;
+         height:32px;
+         border:none;
+         background:#009c84;
+         color:#fff;
+         margin-top:5px;
+         }
+         .navbar ul li a:hover{
+         color:#009c84;
+         font-weight: 700;
+         text-shadow:-10px -10px 2px #fff;
+        }
+        form{
+            margin-left: 20%;
+        }
+        .form-group button{
+            background-color:#009c84;
+        }
+        .up p a{
+        position:fixed;
+        bottom:60px;
+        right:20px;
+}
+        </style>
+</head>
+<body>
+<!-- 导航条 -->
+ <nav class="navbar  nav-tabs nav-justified">
+ <!-- LOGO -->
+    <div class="logo">
+         <a href="index.html">
+          <img src="images/logo.png" width="70px" height="70px">
+        </a>
+    </div>
+     <ul class="nav nav-pills">
+         <li class="active col-xs-12 col-md-2"><a href="index.html">首页</a></li>
+         <li class="download col-xs-12 col-md-2"><a href="record.html">403大家庭</a></li>
+        </div>
+        </div>
+         <li class="download col-xs-12 col-md-2"><a href="about.html">讲解篇</a></li>
+        </div>
+        </div>
+         <li class="col-xs-12 col-md-2"><a href="messaga.html">意见反馈</a></li>
+     </ul>
+     <!-- 搜索框 -->
+    <div class="search">
+         <input type="text" name="" placeholder="请输入文字...">
+         <input type="submit" name="" value="搜索">
+    </div>
+ </nav>
+ <content>
+
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label for="firstname" class="col-xs-2 control-label">姓名</label>
+    <div class="col-xs-10">
+      <input type="text" class="form-control" id="firstname" placeholder="请输入您的姓名">
+    </div>
+  </div>
+   <div class="form-group">
+    <label for="number" class="col-xs-2 control-label">手机号码</label>
+    <div class="col-xs-10">
+      <input type="numbert" class="form-control" id="number" placeholder="请输入您的手机号码">
+    </div>
+  </div>
+    <div class="form-group">
+    <label for="email" class="col-xs-2 control-label">邮箱</label>
+    <div class="col-xs-10">
+      <input type="email" class="form-control" id="email" placeholder="请输入您的邮箱">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="password" class="col-xs-2 control-label">密码</label>
+    <div class="col-xs-10">
+      <input type="password" class="form-control" id="password" placeholder="请输入您的邮箱密码">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-offset-2 col-xs-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox">请记住我
+        </label>
+      </div>
+    </div>
+  </div>
+   <div class="form-group">
+    <label for="name" class="col-xs-2 control-label">所在学院</label>
+    <select class="form-control">
+      <option>外语外贸学院</option>
+      <option>艺术设计学院</option>
+      <option>艺术教育学院</option>
+      <option>公共管理学院</option>
+      <option>信息学院</option>
+      <option>学前教育学院</option>
+      <option>基础教育学院</option>
+      <option>音乐舞蹈学院</option>
+      <option>龙洞校区</option>
+      <option>海珠校区</option>
+      <option>天平架校区</option>
+    </select>
+    </div>
+   <div class="form-group">
+   <label for="textarea" class="col-xs-2 control-label">意见/建议</label>
+    <textarea class="form-control" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-offset-2 col-xs-10">
+      <button type="submit" class="btn btn-default">提交</button>
+    </div>
+  </div>
+</form>
+<div class="up">
+    <p><a href="about.html"><img src="images/up.png" alt="" width="60px" height="60px"></a></p>
+</div>
+ </content>
+ <footer>
+   <div class="text-center">
+    <p>&nbsp;&nbsp;&nbsp;CopyRight 2021 神仙宿舍403,All Rights Reserved </p>
+    <p>&nbsp;&nbsp;声明：本网站为期末作品网站，记录宿舍生活以及学习成果</p>
+    <p>地址：中国·广东·阳江 &nbsp;  &nbsp;邮编：529800  &nbsp; &nbsp;微信号：me20010318</p>
+    </div>
+ </footer>
+</body>
+</html>

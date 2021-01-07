@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="bootstrap-3.3/bootstrap-3.3.7-dist/js/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <title>讲解篇</title>
+        <style type="text/css" media="screen">
+                *{
+        padding:0;
+        margin:0;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            background-color: #74b1fd;
+                    }
+            nav{
+           width: 100%;
+           height: 100px;
+           position: fixed;
+           top:0;
+           left:0;
+        }
+        .logo{
+            float:left;
+            margin-top:10px;
+            margin-left:50px;
+        }
+        .navbar ul{
+            text-align: center;
+            height: 30px;
+            width: 1000px;
+            text-decoration:none;
+        }
+        .navbar ul li{
+         float: left;
+         margin-top: 30px;
+         margin-left:20px;
+         list-style-type:none;
+         font-size:20px;
+        }
+        .navbar ul li a{
+        text-decoration:none;
+        color:#fff;
+        }
+        .navbar .search input{
+         outline: none;
+         float:left;
+         }
+        .navbar .search input[type="text"]{
+         width:220px;
+         height:30px;
+         border:1px solid #ccc;
+         border-right: none;
+         padding-left: 10px;
+         margin-left: 45px;
+         margin-top:5px;
+               }
+        .navbar .search input[type="submit"]{
+         width:70px;
+         height:32px;
+         border:none;
+         background:#009c84;
+         color:#fff;
+         margin-top:5px;
+         }
+         .navbar ul li a:hover{
+         color:#009c84;
+         font-weight: 700;
+         text-shadow:-10px -10px 2px #fff;
+        }
+        /* 标题 */
+h1{
+    font-weight: 700;
+    color:#ccc;
+    text-align:center;
+}
+h1:hover{
+    color:#009c84;
+    text-shadow: -10px -10px 0px #fff;
+}
+.one{
+    text-align:center;
+    font-size: 17px;
+    color:#fff;
+}
+.h3{
+    color:#009c84;
+}
+.two p{
+line-height:30px;
+}
+ .top p a{
+    position:fixed;
+    bottom:190px;
+    right:20px;
+ }
+.up p a{
+    position:fixed;
+    bottom:130px;
+    right:20px;
+}
+.down p a{
+    position:fixed;
+    bottom:70px;
+    right:20px;
+}
+footer{
+    color:#000;
+    font-size: 14px;
+}
+
+        </style>
+</head>
+<body>
+<!-- 导航条 -->
+ <nav class="navbar" id="top">
+ <!-- LOGO -->
+    <div class="logo">
+         <a href="index.html">
+          <img src="images/logo.png" width="70px" height="70px">
+        </a>
+    </div>
+     <ul class="nav nav-pills">
+         <li class="active col-xs-12 col-md-2"><a href="index.html">首页</a></li>
+         <li class="download col-xs-12 col-md-2"><a href="record.html">403大家庭</a></li>
+        </div>
+        </div>
+         <li class="download col-xs-12 col-md-2"><a href="about.html">讲解篇</a></li>
+        </div>
+        </div>
+         <li class="col-xs-12 col-md-2"><a href="messaga.html">意见反馈</a></li>
+     </ul>
+     <!-- 搜索框 -->
+    <div class="search">
+         <input type="text" name="" placeholder="请输入文字...">
+         <input type="submit" name="" value="搜索">
+    </div>
+ </nav>
+ <content>
+     <div class="one">
+         <h1>页面特点</h1>
+         <div class="text text-left">
+             <p class="h3">一、网站整体效果</p>
+             <p>1、以学校图片为背景图与校园主题相对应，网站以logo同色系绿色、背景图天空蓝色、灰色、白色、黑色为主，走的是简约风。主要的内容放在了403大家庭（record.html）这一个页面，导航条组成部分有学校LOGO、首页（index.html）、403大家庭（record.html）、讲解篇（about.html）、意见反馈（messaga.html）、搜索框</p>
+             <p>2、导航条的LOGO、首页点击即可跳转到index.html页面,每个页面右下方都有页面之间相互跳转。</p>
+             <p>3、导航条的文字利用伪元素和文字阴影，效果是鼠标经过文字时，文字变绿色且有白色阴影</p>
+         </div>
+         <div class="text2 text-left">
+             <p class="h3">二、index.html页面</p>
+             <p>1、大标题用了CSS3渐变的样式以及动画</p>
+             <p>2、一张学校的背景图</p>
+             <p>3、向下的图标跳转到403大家庭（record.html）</p>
+         </div>
+         <div class="text3 text-left">
+             <p class="h3">三、record.html页面</p>
+             <p>1、分类标题利用了利用伪元素和文字阴影</p>
+             <p>2、大合照利用css3动画和伪元素，形成一个照片墙，鼠标经过时图片放大。</p>
+             <p>3、利用跑马灯做了一个简单版的弹幕</p>
+             <p>4、页面右下角有三个图标分别是置顶、上一个页面、下一个页面</p>
+         </div>
+         <div class="two">
+             <h1>课程心得</h1>
+            <p class="text-left">从接触代码到现在有一年多了，学习老师的视频资源和书本收获了好多，一开始接触的是苏旋老师教的时候，个人觉得很懵，到慢慢疫情在家专注学HTML、CSS，了解了更多，慢慢就喜欢了，再后来就选择了技术技能方向，这个学期学习了CSS3，样式非常丰富，而且能做各种各样的效果，我们的作业也是非常的炫，在学习的过程中会有很多未解之谜，通过咨询度娘and我的舍友可以解决一些问题。最后还接触Boostrap,现在还是个入门级小白，趁这个假期好好的学习学习相关的内容，把这学期学的内容也要巩固。希望一切都好！</p>
+         </div>
+     <div class="top">
+        <p><a href="#top"><img src="images/top.png" alt="" width="60px" height="60px"></a></p>
+        </div>
+        <div class="up">
+    <p><a href="record.html"><img src="images/up.png" alt="" width="60px" height="60px"></a></p>
+</div>
+        <div class="down">
+    <p><a href="messaga.html"><img src="images/down.png" alt="" width="60px" height="60px"></a></p>
+</div>
+ </content>
+ <footer>
+   <div class="text-center">
+    <p>&nbsp;&nbsp;&nbsp;CopyRight 2021 神仙宿舍403,All Rights Reserved </p>
+    <p>&nbsp;&nbsp;声明：本网站为期末作品网站，记录宿舍生活以及学习成果</p>
+    <p>地址：中国·广东·阳江 &nbsp;  &nbsp;邮编：529800  &nbsp; &nbsp;微信号：me20010318</p>
+    </div>
+ </footer>
+</body>
+</html>

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="bootstrap-3.3/bootstrap-3.3.7-dist/js/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <title>403大家庭</title>
+    <style type="text/css" media="screen">
+                *{
+        padding:0;
+        margin:0;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            background-color: #74b1fd;
+                    }
+            nav{
+           width: 100%;
+           height: 100px;
+           position: fixed;
+           top:0;
+           left:0;
+        }
+        .logo{
+            float:left;
+            margin-top:10px;
+            margin-left:50px;
+        }
+        .navbar ul{
+            text-align: center;
+            height: 30px;
+            width: 1000px;
+            text-decoration:none;
+        }
+        .navbar ul li{
+         float: left;
+         margin-top: 30px;
+         margin-left:20px;
+         list-style-type:none;
+         font-size:20px;
+        }
+        .navbar ul li a{
+        text-decoration:none;
+        color:#fff;
+        }
+        .navbar .search input{
+         outline: none;
+         float:left;
+         }
+        .navbar .search input[type="text"]{
+         width:220px;
+         height:30px;
+         border:1px solid #ccc;
+         border-right: none;
+         padding-left: 10px;
+         margin-left: 45px;
+         margin-top:5px;
+               }
+        .navbar .search input[type="submit"]{
+         width:70px;
+         height:32px;
+         border:none;
+         background:#009c84;
+         color:#fff;
+         margin-top:5px;
+         }
+         .navbar ul li a:hover{
+         color:#009c84;
+         font-weight: 700;
+         text-shadow:-10px -10px 2px #fff;
+        }
+        .images{
+    width: 960px;
+    margin: 60px 60px 10px 40px;
+
+    position: absolute;
+}
+h1{
+    font-weight: 700;
+    color:#ccc;
+    text-align:center;
+}
+h1:hover{
+    color:#009c84;
+    text-shadow: -10px -10px 0px #fff;
+}
+.pic{
+    width: 200px;
+}
+
+.images img:hover{
+    box-shadow: 15px 15px 20px rgba(50,50,50,0.4);
+    transform:rotate(0deg) scale(2.50);
+    -webkit-transform:rotate(0deg) scale(1.60);
+    z-index: 1000;
+}
+
+.images img{
+    padding: 10px 10px 15px;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 3px rgba(50,50,50,0.4);
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    position: absolute;
+    z-index: 1;
+}
+
+.pic1{
+    left: 560px;
+    top: 0;
+    transform:rotate(-5deg);
+    -webkit-transform:rotate(-5deg);
+}
+
+.pic2{
+    left: 200px;
+    top: 10px;
+    transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+}
+.pic3{
+    top: -40px;
+    right:35px;
+    transform:rotate(5deg);
+    -webkit-transform:rotate(5deg);
+}
+
+.pic4{
+    top: 40px;
+    left: 380px;
+    transform:rotate(-10deg);
+    -webkit-transform:rotate(-10deg);
+}
+
+.pic5{
+
+    top: 94px;
+    right: 10px;
+    transform:rotate(-10deg);
+    -webkit-transform:rotate(-10deg);
+}
+.pic6{
+    left: 10px;
+    top: 0;
+    transform:rotate(10deg);
+    -webkit-transform:rotate(10deg);
+}
+.pic7{
+    left:906px;
+    top: 53px;
+    transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+}
+.pic8{
+    right: -150px;
+    top: -130px;
+    transform:rotate(5deg);
+    -webkit-transform:rotate(5deg);
+}
+.pic9{
+    right:-150px;
+    top: 150px;
+    transform:rotate(15deg);
+    -webkit-transform:rotate(15deg);
+}
+
+.two p{
+    position: absolute;
+    top:85%;
+    margin-left: 3%;
+    font-size: 19px;
+    color:#fff;
+}
+.two p span{
+    font-size: 21px;
+    font-weight: 700;
+}
+.three h1{
+    position: absolute;
+    top:100%;
+    margin-left: 40%;
+ }
+ .content-inner{
+    margin-top:45%;
+    margin-left: 30px;
+    color:#fff;
+    font-size: 20px;
+    text-align: center;
+ }
+.video h1{
+    position: absolute;
+    margin-top:85%;
+  }
+.video1{
+    position: absolute;
+    margin-top: 85%;
+    margin-left:3%;
+}
+.video1 p{
+    margin-top: 20px;
+    margin-left: -20px;
+    font-size: 16px;
+    line-height:30px;
+}
+.video2{
+    position: absolute;
+    margin-top: 85%;
+    margin-left:73%;
+}
+.video2 p{
+    margin-top: 20px;
+    margin-right:10px;
+    font-size: 16px;
+    line-height:30px;
+}
+.video3{
+    position: absolute;
+    margin-top: 81%;
+    margin-left:30%;
+}
+.video3 p{
+    margin-left: -15px;
+    font-size: 16px;
+    line-height:30px;
+}
+.video4{
+    position: absolute;
+    margin-top: 115%;
+    margin-left:30%;
+}
+.video4 p{
+    font-size:16px;
+    line-height:30px;
+}
+.video4 span{
+    font-size:40px;
+    font-weight:700;
+    color:red;
+}
+.say{
+    width: 100%;
+    height: 600px;
+}
+.say h1{
+    position: absolute;
+    margin-top: 156%;
+}
+.say span{
+    color:#009c84;
+}
+.d1,.d2,.d3,.d4,.d5,.d6,.d7,.d8,.d9,.d10{
+    width: 100%;
+    font-size: 20px;
+    color:#fff;
+}
+.d1{
+position: absolute;
+margin-top:153%;
+
+ }
+ .d2{
+position: absolute;
+margin-top:160%;
+ }
+ .d3{
+
+position: absolute;
+margin-top:167%;
+ }
+.d4{
+position: absolute;
+margin-top:174%;
+ }
+ .d5{
+position: absolute;
+margin-top:178%;
+ }
+.d6{
+position: absolute;
+margin-top:183%;
+ }
+.d7{
+position: absolute;
+margin-top:187%;
+ }
+ .d8{
+position: absolute;
+margin-top:192%;
+ }
+ .d9{
+position: absolute;
+margin-top:199%;
+ }
+ .d10{
+position: absolute;
+margin-top:203%;
+ }
+ .top p a{
+    position:fixed;
+    bottom:190px;
+    right:20px;
+ }
+.up p a{
+    position:fixed;
+    bottom:130px;
+    right:20px;
+}
+.down p a{
+    position:fixed;
+    bottom:70px;
+    right:20px;
+}
+footer{
+    margin-top:180%
+ }
+    </style>
+
+
+
+
+</head>
+<body>
+<!-- 导航条 -->
+ <nav class="navbar"  id="top">
+ <!-- LOGO -->
+    <div class="logo">
+         <a href="index.html">
+          <img src="images/logo.png" width="70px" height="70px">
+        </a>
+    </div>
+     <ul class="nav nav-pills">
+         <li class="active col-xs-12 col-md-2"><a href="index.html">首页</a></li>
+         <li class="download col-xs-12 col-md-2"><a href="record.html">403大家庭</a></li>
+        </div>
+        </div>
+         <li class="download col-xs-12 col-md-2"><a href="about.html">讲解篇</a></li>
+        </div>
+        </div>
+         <li class="col-xs-12 col-md-2"><a href="messaga.html">意见反馈</a></li>
+     </ul>
+     <!-- 搜索框 -->
+    <div class="search">
+         <input type="text" name="" placeholder="请输入文字...">
+         <input type="submit" name="" value="搜索">
+    </div>
+ </nav>
+ <content>
+     <div class="one">
+         <h1>山顶别墅403合照篇</h1>
+     </div>
+     <div class="images">
+         <img src="images/1.jpg" alt="" class="pic pic1" />
+         <img src="images/2.jpg" alt="" class="pic pic2" />
+         <img src="images/3.jpg" alt="" class="pic pic3" />
+         <img src="images/4.jpg" alt="" class="pic pic4" />
+         <img src="images/5.jpg" alt="" class="pic pic5" />
+         <img src="images/6.jpg" alt="" class="pic pic6" />
+         <img src="images/7.jpg" alt="" class="pic pic7" />
+         <img src="images/8.jpg" alt="" class="pic pic8" />
+         <img src="images/9.jpg" alt="" class="pic pic9" />
+     </div>
+     <div class="two">
+        <p><span>403介绍</span><br />
+         7栋403,能看到广州塔塔尖的山景房，里面住着10位来自广东不同城市的仙女，占比：电商一班6/10，电商二班4/10</p>
+         </p>
+     </div>
+       <div class="three">
+         <h1>403第n任主人介绍篇</h1>
+     <div class="content-inner">
+                <div class="col-xs-12 col-md-4">
+                    <img src="images/lcx.jpg" width="250px" height="250px">
+                    <br> 昵称：大哥的女人超甜
+                    <br> 来自：阳江阳西
+                </div>
+                <div class="col-xs-12 col-md-4"><img src="images/caq.jpg" width="250px" height="250px">
+                    <br> 昵称：人间毒舌Angle
+                    <br> 来自：湛江吴川
+                </div>
+                <div class="col-xs-12 col-md-4"><img src="images/zzq.jpg" width="250px" height="250px">
+                    <br> 昵称：从化富婆梓晴
+                    <br> 来自：广州从化
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <img src="images/lyj.jpg" width="250px" height="250px">
+                    <br> 昵称：美妆博主一斤
+                    <br> 来自：汕头潮阳
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <img src="images/lyy.jpg" width="250px" height="250px">
+                    <br> 昵称：莹莹子
+                    <br> 来自：湛江雷州
+                </div>
+                <div class="col-xs-12 col-md-4">
+                <img src="images/sc.jpg" width="250px" height="250px">
+                    <br> 昵称：南澳沈老板
+                    <br> 来自：汕头南澳
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <img src="images/dy.jpg" width="250px" height="250px">
+                    <br> 昵称：唱跳RapACE董猪
+                    <br> 来自：茂名化州
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <img src="images/cr.jpg" width="250px" height="250px">
+                    <br> 昵称：一斤的CP蔡蔡
+                    <br> 来自：揭阳揭西
+                </div>
+                <div class="col-xs-12 col-md-3">
+                <img src="images/zyj.jpg" width="250px" height="250px">
+                    <br> 昵称：王一博的“鸽王”静子哥
+                    <br> 来自：潮州饶平
+                </div>
+                <div class="col-xs-12 col-md-3">
+                <img src="images/czh.jpg" width="250px" height="250px">
+                    <br> 昵称：泓泓子
+                    <br> 来自：汕头澄海
+                </div>
+        </div>
+        <div class="video">
+             <h1>视频大合集</h1>
+             <div class="video1">
+             <video src="media/1.mp4" controls="controls" height="500px" width="300px">您的浏览器不支持 video 标签</video>
+             <p>视频介绍：<br>
+             宿舍大团建，十人全到，地点：花城广场<br>
+             宿舍第一次一起去广州塔的时候差了蔡蔡，<br>
+             这次去广州塔在同一个地方拍了十人合照，圆梦了！<br>
+
+             </p>
+             </div>
+             <div class="video2">
+             <video src="media/2.mp4" controls="controls" height="500px" width="300px">您的浏览器不支持 video 标签</video>
+             <p>视频介绍：<br>
+             前面一段是2019年贴横批的时候记录，<br>
+             后面一段是2020年贴对联时候记录，<br>
+             我们403的团队是专业的，仪式感也是要有的，<br>
+             每年都要喜庆喜庆明年未完待续噢......<br>
+             </p>
+             </div>
+             <div class="video3">
+             <video src="media/3.mp4" controls="controls" height="300px" width="500px">您的浏览器不支持 video 标签
+             </video>
+             <p>视频介绍：<br>
+             在开学封校的时候，全宿舍一起锻炼，每晚打卡广场舞and健身视频，<br>不做当代恶臭的大学生，做个有趣的大学生，每天锻炼一小时，健康幸福一辈子！<br>
+             锻炼视频内容推荐：帕梅拉、韩国夫妇、keepAPP里面的视频，动起来吧！
+             </p>
+             </div>
+             <div class="video4">
+             <video src="media/4.mp4" controls="controls" height="300px" width="500px">您的浏览器不支持 video 标签
+             </video>
+             <p>视频介绍：<br>
+             <span>403女团C位出道</span><br>
+             </p>
+             </div>
+        </div>
+        <div class="say">
+            <h1>关于403，我们有话说</h1>
+            <div class="d1">
+                <marquee direction="left" behavior="slide" scrollamount="15">
+                <p><span>董愉说：</span>我觉得403真的是一个很温暖的宿舍 遇到一群合得来的舍友真的是上大学以来觉得最幸运的事情。</p>
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                因为除了上课 ,我们和舍友相处的时间最多 ,在这个相处的时间里大家有说有笑相亲相爱 每天朝夕相处的都是可爱的人 真的太开心了！</p>
+                </marquee>
+            </div>
+            <div class="d2">
+                <marquee direction="left" behavior="slide" scrollamount="12">
+                <p><span>梓晴说:</span>&nbsp;我们的宿舍生活，琐碎嘈杂里有我们每一个人的声音和气味，切切实实，真实不虚，是真正属于自己的东西，暖心暖肺。</p>
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                活在这样的生活里，即使有这样那样的怨怼和不满，也像是唠叨的母亲对子女的数落，背后藏着的仍然是真心真意</p>
+                </marquee>
+            </div>
+            <div class="d3">
+                <marquee direction="left" behavior="slide" scrollamount="10">
+                <p><span>蔡润说:</span>&nbsp;403真是一个超级爆炸有爱的大家庭，学习上生活上毫无保留的分享经验，</p>
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                经常集体组织出动，逛街纪念聚餐，这些一起经历的都是属于7栋403的所有小可爱们的美好回忆。</p>
+                </marquee>
+            </div>
+            <div class="d4">
+                <marquee direction="left" behavior="slide" scrollamount="8">
+                <p><span>怡静说:</span>&nbsp;大一来到这个宿舍，一开始大家都挺拘谨的，斯斯文文的，后来熟了之后没想到都是人来疯</p>
+                </marquee>
+            </div>
+            <div class="d5">
+                <marquee direction="left" behavior="slide" scrollamount="8">
+                <p><span>艺津说:</span>&nbsp;我觉得403是一个很有爱的大家庭，姐妹们又有钱又漂亮又善良，我每天都想和她们一起去干饭</p>
+                </marquee>
+            </div>
+            <div class="d6">
+                <marquee direction="left" behavior="slide" scrollamount="10">
+                <p><span>沈淳说:</span>&nbsp;
+                403神仙宿舍真的填平了我太多无聊不开心的时刻也陪伴见证了我太多美好的时刻
+                </p>
+                </marquee>
+            </div>
+            <div class="d7">
+                <marquee direction="left" behavior="slide" scrollamount="11">
+                <p><span>超娴说:</span>&nbsp;
+                403真的很好，第一次住宿就能遇到一群合得来的“有趣灵魂”，喜欢403的团结，喜欢403的友爱，403的仙女都是最佳拍档！
+                </p>
+                </marquee>
+            </div>
+            <div class="d8">
+                <marquee direction="left" behavior="slide" scrollamount="12">
+                <p><span>莹莹说:</span>&nbsp;
+                很开心缘分让我们10人相聚403宿舍，经过差不多两年的相处，我们都互相了解彼此的优点与沙雕之处，期间我们宿舍</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开展了很多有趣的外出活动，在舍内也经常聊八卦互相打闹哈哈，我觉得我们宿舍是一个既沙雕又和谐友爱，你们羡慕了吗？
+                </p>
+                </marquee>
+            </div><div class="d9">
+                <marquee direction="left" behavior="slide" scrollamount="13">
+                <p><span>梓泓说:</span>&nbsp;
+                从大一初遇的陌生到军训的初识再到新学期的互相了解、互相帮助，疫情期间宿群里的分享生活，聊天，如今大二的我们更加熟悉了。
+                </p>
+                </marquee>
+            </div><div class="d10">
+                <marquee direction="left" behavior="slide" scrollamount="15">
+                <p><span>安琪说:</span>&nbsp;
+                记得第一次见到403全员是在2019.09.07。刚开始对大家有种陌生感，彼此都是客客气气的，讲真刚开始我很害怕这种陌生的环境，</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从一个熟悉的环境瞬间进入到一个陌生的环境，生怕自己言语做事不当，所以在一些事情上都会小心翼翼的。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;后来，慢慢地我发现原来我的舍友们是多么的友好、善良，宿舍是多么的温暖。慢慢地我从以前的陌生感变为了现在的熟悉感，</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;慢慢地你会发现，当你生病时会有人给你送药，当你身体不舒服会有人陪你去校医室，当你饿时会有人给你打包……</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;或许这些算不了什么大事，可在我眼里却觉得它们有不一样的意义。读书在外，我们都渴望回家，每到节日的时候</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们全宿舍人都会聚在一起边吃“团圆饭”边聊天，这种感觉给我就是我们就是一个温馨的小家庭。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;403将会带着那一份温暖一直延续下去，而我们也会越来越棒，我们的感情也会越来越深。
+                </p>
+                </marquee>
+            </div>
+
+        </div>
+        <div class="top">
+        <p><a href="#top"><img src="images/top.png" alt="" width="60px" height="60px"></a></p>
+        </div>
+        <div class="up">
+    <p><a href="index.html"><img src="images/up.png" alt="" width="60px" height="60px"></a></p>
+</div>
+        <div class="down">
+    <p><a href="about.html"><img src="images/down.png" alt="" width="60px" height="60px"></a></p>
+</div>
+ </content>
+ <footer>
+   <div class="text-center">
+    <p>&nbsp;&nbsp;&nbsp;CopyRight 2021 神仙宿舍403,All Rights Reserved </p>
+    <p>&nbsp;&nbsp;声明：本网站为期末作品网站，记录宿舍生活以及学习成果</p>
+    <p>地址：中国·广东·阳江 &nbsp;  &nbsp;邮编：529800  &nbsp; &nbsp;微信号：me20010318</p>
+    </div>
+ </footer>
+</body>
+</html>
